@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Sleeper;
 import tpolab10.page.*;
 
@@ -13,7 +14,7 @@ public class LearnOpeningsTest {
     private WebDriver driver;
     @Before
     public void browserSetup() {
-        driver = new EdgeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
     @After
